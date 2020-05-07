@@ -1,0 +1,110 @@
+body{
+    height: 150vh;
+    
+}
+main .form{
+    width: 55%;
+    height: 500px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: aliceblue;
+    box-shadow: 10px 10px 35px black;
+    transition: all 1s ease;
+}
+.inp ,select{
+    display: block;
+    border: none;
+    padding: 0% 3%;
+    background-color: #ccc;
+    color: orange;
+    position: absolute;
+    right: 40%;
+    font-size: 1.5em;
+    width:45%;
+}
+.inp:focus{
+    background-color: orange;
+    color: #ccc;
+    transition: all 1s ease;
+}
+.inp:nth-child(1){
+    top: 15%;
+}
+
+.inp:nth-child(3){
+    top: 25%;
+}
+.inp:nth-child(5){
+    top: 35%;
+}
+.inp:nth-child(7){
+    top: 45%;
+}
+.inp:nth-child(9){
+    top: 55%;
+}
+select{
+    top: 65%;
+    width: 35%;
+    direction: rtl;
+}
+main label{
+    font-size: 1.5em;
+    text-align: right;
+    position: absolute;
+    right: 0%;
+    color: #ccc;
+    background-color: #fa0;
+    width: 35%;
+    padding-right: 4%;
+    direction: rtl;
+}
+
+main label:nth-child(2){
+    top: 15%;
+}
+
+main label:nth-child(4){
+    top: 25%;
+}
+main label:nth-child(6){
+    top: 35%;
+}
+main label:nth-child(8){
+    top: 45%;
+}
+main label:nth-child(10){
+    top: 55%;
+}
+main label:nth-child(12){
+    top: 65%;
+}
+
+main button[type="submit"]{
+    background-color: orange;
+    padding: 5px;
+    font-size: 1.5em;
+    color: black;
+    box-shadow: 0px 0px 20px 5px #000;
+    position: absolute;
+    bottom: 9%;
+    left: 50%;
+    transform: translateX(-10%);
+}
+@media (max-width:1000px){
+    main .form{
+        width: 60%;
+    }
+}
+@media (max-width:800px){
+    main .form{
+        width: 70%;
+    }
+}
+@media (max-width:580px){
+    main .form{
+        width: 95%;
+    }
+}
